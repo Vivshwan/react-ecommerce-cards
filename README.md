@@ -4,9 +4,9 @@ A modern, responsive, and fully functional e-commerce frontend built with **Reac
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-live-link-here.com)
+[View Live Demo](https://react-ecommerce-cards-eight.vercel.app/)
 
-*(Replace the link above after deploying to Vercel or Netlify.)*
+
 
 ## ✨ Features
 

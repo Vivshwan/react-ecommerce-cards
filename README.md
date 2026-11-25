@@ -38,7 +38,7 @@ A modern, responsive, and fully functional e-commerce frontend built with **Reac
 ## 📂 Project Structure
 
 ```text
-mini-store/
+react-ecommerce-cards/
 ├── public/
 ├── src/
 │   ├── App.jsx          # Main application logic, state management, and layout
@@ -63,13 +63,13 @@ mini-store/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/mini-store.git
+   git clone https://github.com/Vivshwan/react-ecommerce-cards.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd mini-store
+   cd react-ecommerce-cards
    ```
 
 3. **Install dependencies:**
@@ -128,9 +128,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👤 Author
 
-**Your Name**
+**Vivshwan**
 
-- GitHub: [@your-username](https://github.com/your-username)
+- GitHub: [@Vivshwan](https://github.com/Vivshwan)
 
 ---
 

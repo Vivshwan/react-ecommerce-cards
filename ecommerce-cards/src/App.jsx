@@ -80,7 +80,6 @@ function App() {
     });
   };
 
-  // NEW: Decrease Quantity
   const handleDecreaseQuantity = (productId) => {
     setCartItems((prev) => {
       const existing = prev.find((item) => item.id === productId);
@@ -95,7 +94,6 @@ function App() {
     });
   };
 
-  // Remove entirely (Red Cross)
   const handleRemoveFromCart = (productId) => {
     setCartItems((prev) => prev.filter((item) => item.id !== productId));
   };
@@ -282,7 +280,6 @@ function App() {
                       className="cart-item-img"
                     />
                     
-                    {/* UPDATED CART ITEM INFO WITH QUANTITY CONTROLS */}
                     <div className="cart-item-info">
                       <p className="cart-item-title" title={item.title}>
                         {item.title}
@@ -314,7 +311,7 @@ function App() {
                       </div>
                     </div>
 
-                    {/* Kept the red cross to remove entirely */}
+                    {/* Red cross to remove entirely */}
                     <button
                       className="remove-btn"
                       onClick={() => handleRemoveFromCart(item.id)}
@@ -327,18 +324,22 @@ function App() {
               </div>
             )}
 
+            {/* CART FOOTER (Continue Shopping) */}
             {cartItems.length > 0 && (
               <div className="cart-footer">
                 <div className="cart-total">
                   <span>Total:</span>
                   <span>
-                    ₹
-                    {totalPrice.toLocaleString("en-IN", {
-                      maximumFractionDigits: 0,
-                    })}
+                    ₹{totalPrice.toLocaleString("en-IN", { maximumFractionDigits: 0 })}
                   </span>
                 </div>
-                <button className="checkout-btn">Checkout</button>
+                
+                <button 
+                  className="checkout-btn" 
+                  onClick={() => setIsCartOpen(false)}
+                >
+                  Continue Shopping
+                </button>
               </div>
             )}
           </div>

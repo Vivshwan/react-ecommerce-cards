@@ -512,3 +512,106 @@
     padding: 24px;
   }
 }
+
+/* =========================================
+   MOBILE RESPONSIVENESS (Screens < 768px)
+   ========================================= */
+@media (max-width: 768px) {
+  
+  /* 1. Header layout - stack items vertically */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  /* Make search bar take full width */
+  .header > div {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header input {
+    width: 100% !important; /* Override the inline 240px */
+  }
+
+  .cart-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 2. Layout Container - stack sidebar and products */
+  .layout-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* 3. Filter Sidebar - make it full width and horizontal */
+  .filter-sidebar {
+    width: 100%;
+    position: static; /* Remove sticky on mobile */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .filter-sidebar h3 {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+  }
+
+  .filter-group {
+    flex: 1;
+    margin-bottom: 0;
+    min-width: 140px;
+  }
+
+  /* 4. Product Grid - adjust for smaller screens */
+  .products-grid {
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%; /* Make cards take full width of grid */
+    max-width: 320px; /* But don't let them get too huge */
+  }
+
+  /* 5. Cart Panel - full width on mobile */
+  .cart-panel {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  /* 6. Product Modal - stack image and info vertically */
+  .modal-content {
+    flex-direction: column;
+  }
+
+  .modal-image-section {
+    border-right: none;
+    border-bottom: 1px solid #333;
+    padding: 24px;
+  }
+
+  .modal-main-image {
+    max-height: 200px;
+  }
+
+  .modal-info-section {
+    padding: 24px;
+    max-height: none; /* Let it scroll with the page */
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-price {
+    font-size: 24px;
+  }
+}
